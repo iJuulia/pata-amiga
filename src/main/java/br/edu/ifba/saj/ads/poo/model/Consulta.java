@@ -18,6 +18,7 @@ public class Consulta extends AbstractModel<UUID> {
         this.status = status;
     }
 
+    // implicitos
     public Animal getAnimal() {
         return animal;
     }

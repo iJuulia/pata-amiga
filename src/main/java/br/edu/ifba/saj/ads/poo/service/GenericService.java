@@ -11,6 +11,6 @@ public interface GenericService<T extends AbstractModel<ID>, ID> {
 	void remover(ID id);
 	void validar(T entidade) throws RegraDeNegocioException;
 
-	List<T> buscarTodos();
+	List<T> buscarTodos(); // T buscarTodos();
 	T buscarPorId(ID id) throws IllegalArgumentException;
 }

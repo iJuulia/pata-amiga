@@ -9,6 +9,7 @@ public abstract class AbstractModel<ID> {
 	private Usuario createdBy;
 	private Usuario updatedBy;
 
+    // implicitos
     public ID getId() {
         return id;
     }

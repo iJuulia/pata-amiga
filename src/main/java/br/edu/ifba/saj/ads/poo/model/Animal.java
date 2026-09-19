@@ -15,6 +15,7 @@ public class Animal extends AbstractModel<UUID> {
         this.tutor = tutor;
     }
 
+    // implicitos
     public String getNome() {
         return nome;
     }

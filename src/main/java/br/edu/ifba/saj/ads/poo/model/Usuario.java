@@ -13,6 +13,7 @@ public class Usuario extends AbstractModel<UUID> {
 		this.perfil = perfil;
 	}
 
+    // implicitos
     public String getLogin() {
         return login;
     }

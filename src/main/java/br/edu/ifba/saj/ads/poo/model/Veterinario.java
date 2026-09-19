@@ -15,6 +15,7 @@ public class Veterinario extends AbstractModel<UUID> {
         this.disponivel = true;
     }
 
+    // implicitos
     public String getNome() {
         return nome;
     }

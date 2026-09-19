@@ -11,6 +11,7 @@ public class Tutor extends AbstractModel<UUID> {
         this.CPF = CPF;
     }
 
+    // implicitos
     public String getNome() {
         return nome;
     }

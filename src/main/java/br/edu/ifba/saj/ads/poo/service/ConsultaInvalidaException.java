@@ -1,5 +1,6 @@
 package br.edu.ifba.saj.ads.poo.service;
 
+// implicito
 public class ConsultaInvalidaException extends RegraDeNegocioException {
 	
     public ConsultaInvalidaException(String msg) {

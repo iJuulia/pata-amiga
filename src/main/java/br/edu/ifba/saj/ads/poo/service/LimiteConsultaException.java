@@ -1,5 +1,6 @@
 package br.edu.ifba.saj.ads.poo.service;
 
+// implicito
 public class LimiteConsultaException extends RegraDeNegocioException {
 
 	public LimiteConsultaException(String msg) {

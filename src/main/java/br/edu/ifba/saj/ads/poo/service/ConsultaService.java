@@ -8,14 +8,14 @@ import br.edu.ifba.saj.ads.poo.model.Consulta;
 public class ConsultaService extends GenericServiceImpl<Consulta, UUID> {
 
 	public ConsultaService() {
-		super(new GenericDAOImpl<>(UUID.class));
+		super(new GenericDAOImpl<>(UUID.class)); // construtor deve ter sido diferente
 	}
 
 	public void validarLimiteAgenda(Consulta consulta) throws ConsultaInvalidaException {
 		for (Consulta c : buscarTodos()) {
 			if (c.getDataHora() == consulta.getDataHora()
 				&& c.getVeterinario() == consulta.getVeterinario())
-			throw new ConsultaInvalidaException("Horário inválido.");
+			throw new ConsultaInvalidaException("Horário inválido."); // msg implicita
 		}
 	}
 
@@ -26,7 +26,7 @@ public class ConsultaService extends GenericServiceImpl<Consulta, UUID> {
 				qtd++;
 			}
 			if (qtd >= 2) {
-				throw new LimiteConsultaException("Limite excedido.");
+				throw new LimiteConsultaException("Limite excedido."); // msg implicita
 			}
 		}
 	}
