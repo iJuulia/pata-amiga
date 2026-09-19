@@ -18,6 +18,18 @@ public class GenericDAOImpl<T extends AbstractModel<ID>, ID> implements GenericD
 		this.idClass = idClass; // this.bancoDeDados = new HashMap<ID, T>()
 	}
 
+	/*
+	como eu fiz na prova:
+
+	private HashMap<ID, T> bancoDeDados;
+	private ID id;
+
+	public GenericDaoImpl(Class<ID>) {
+		this.id = Class<ID> (algo assim)
+		this.bancoDeDados = new HashMap<ID,T>();
+	}
+	*/
+
 	@Override
 	public ID salvar(T entidade, Usuario usuario) {
 		ID idCriado = (ID) UUID.randomUUID(); // implicito
